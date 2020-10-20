@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Servicios</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+	<style>
+
+	body {
+		background-image: url('media/green.png');
+		margin: 0;
+		}
+
+	nav  {
+		background-color: none;
+		width: 100%;
+		height: 80px;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		border-bottom: 2px solid black;
+		}
+
+	nav li {
+		display: inline-block;
+		float: left;
+		padding: 10px;
+		margin: 16px;
+		}
+
+	nav a {
+		text-decoration: none;
+		list-style-type: none;
+		color: black;
+		font-size: 17px;
+		font-weight: bold;
+		font-family: 'Quicksand', sans-serif;
+		}
+
+	nav a:hover {
+		background-color: black;
+		color: white;
+		transition: 0.3s;
+		}		
+
+	.contenedor-logo {
+		}
+
+	.logo {
+		#border: 1px solid red;
+		display: inline-block;
+		float: right;
+		padding: 15px;
+		margin: 6px;
+		font-weight: bold;
+		font-size: 24px;	
+		}
+
+	.titulo-parrafos {
+		margin: 0 auto;
+		font-size: 34px;
+		color: black;
+		background-color: #E7E3D5;
+		opacity: 0.9;
+		text-align: center;
+		font-family: 'Alegreya', serif;
+		font-weight: bold;
+		}
+
+	.parrafo1 {
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+		width: 90%;
+		height: 250px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: 'Alegreya', serif;
+		display: none;
+		}
+
+	.parrafo2 {
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+		width: 90%;
+		height: 250px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: 'Alegreya', serif;
+		display: none;
+		}
+
+	.parrafo3 {
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+		width: 90%;
+		height: 250px;
+		margin: 0 auto;
+		text-align: center;
+		font-family: 'Alegreya', serif;
+		display: none;
+		}
+
+	.botonplus1 {
+		color: black;
+		display: block;
+		width: 100%;
+		font-weight: bold;
+		background-color: #E7E3D5;
+		border: 0;
+		}
+
+	.botonplus2 {
+		color: black;
+		display: block;
+		width: 100%;
+		font-weight: bold;
+		background-color: #E7E3D5;
+		border: 0;
+		}
+
+	.botonplus3 {
+		color: black;
+		display: block;
+		width: 100%;
+		font-weight: bold;
+		background-color: #E7E3D5;
+		border: 0;
+		}
+
+	.conjunto {
+		margin: 30px;
+		}
+
+	.footer {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #B3B3B3;
+		z-index: 1000;
+		}
+	
+	.copyright {
+		text-align: center;
+		background-color: #717070;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		font-family: "Source Sans Pro";
+		}
+
+	@media only screen and (max-width: 600px) {
+
+		.titulo-parrafos {
+			font-size: 28px;
+		}
+
+		.parrafo1 {
+			font-size: 16px;
+		}
+
+		.parrafo2 {
+			font-size: 16px;
+		}
+
+		.parrafo3 {
+			font-size: 16px;
+		}
+
+		.logo {
+			font-size: 14px;
+		}
+
+		nav a {
+			font-size: 12px
+		}
+
+	}
+
+	</style>
+	
+</head>
+<body>
+	<!--menu de navegación-->
+		<nav>
+			<ul><!-- lista menu de navegación-->
+				<li><a href="Servicios.html">Servicios</a></li>
+				<li><a href="Proyectos.html">Proyectos</a></li>
+				<li><a href="Sobre-nosotros.html">Sobre Nosotros</a></li>
+				<li><a href="Contacto.html">Contacto</a></li>
+				<div class="contenedor-logo"><a class="logo" href="Index.html">Inicio</a></div>
+			</ul>
+		</nav>
+
+<script src="media/jquery-3.4.1.min.js"></script>
+<script>
+	$(function() { 
+  
+  var botonMostrar1 = $(".botonplus1");
+  var botonMostrar2 = $(".botonplus2");
+  var botonMostrar3 = $(".botonplus3");
+  var parrafo1 = $(".parrafo1");
+  var parrafo2 = $(".parrafo2");
+  var parrafo3 = $(".parrafo3");
+  
+  botonMostrar1.on("click", function() {
+  	parrafo1.toggle("slow");
+
+  	if ($(this).text() == "Ver más") {
+  		$(this).text("Ver menos");
+  		}
+
+  	else {
+  		$(this).text("Ver más");
+  	};
+  });
+
+   botonMostrar2.on("click", function() {
+    parrafo2.toggle("slow");
+
+    if ($(this).text() == "Ver más") {
+  		$(this).text("Ver menos");
+  		}
+
+  	else {
+  		$(this).text("Ver más");
+  	};
+  });
+
+    botonMostrar3.on("click", function() {
+    parrafo3.toggle("slow");
+
+    if ($(this).text() == "Ver más") {
+  		$(this).text("Ver menos");
+  		}
+
+  	else {
+  		$(this).text("Ver más");
+  	};
+  });
+});
+
+</script>
+<div class="conjunto">
+	<p class="titulo-parrafos">Desarrollo Web <button class="botonplus1">Ver más</button></p> </br>
+	<p class="parrafo1">Trabajamos con las últimas versiones de los lenguajes de programación (HTML5, CSS3, ES6, PHP, SQL, JQuery...) para dar a nuestros clientes la mejor experiencia posible.</br></br>Desarrollamos sitios webs de tipo Blog, proyectos online e-commerce, redes sociales y Web 2.0... y cualquier idea que tengas en mente! Y sobre todo que adaptamos tu web a tabletas y dispositivos móviles.</p><br>
+
+
+<p class="titulo-parrafos">CMS <button class="botonplus2">Ver más</button></p> </br>
+	<p class="parrafo2">Trabajamos con gestores de contenidos como Wordpress para permitir a los clientes que administren su propia página web desde una interfaz sencilla e intuitiva.</br></br>Disponemos de múltiples plantillas adaptadas a diferentes tipos de negocios e incluso proporcionamos mantenimiento y soporte técnico de Wordpress para los usuarios más noveles en el desarrollo web. Cualquier dudad? Preguntala!</p><br>
+
+<p class="titulo-parrafos">Evas <button class="botonplus3">Ver más</button></p> </br>
+	<p class="parrafo3">Utilizamos plataformas como Moodle para crear y gestionar espacios de aprendizaje online entre todo el mundo. Aprender a gestionarla y utilizarla es muy sencillo, dispone de un ainterfaz muy amigable para el usuario</p><br>
+</div>
+
+<footer class="footer">	
+	<div class="copyright">&copy;2019 - <strong>Oscorp</strong></div>
+</footer>
+</body>
+</html>

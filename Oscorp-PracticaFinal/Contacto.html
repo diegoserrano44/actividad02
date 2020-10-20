@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contacto</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+	<style>
+
+	body {
+		background: url('media/green.png');
+		margin: 0;
+		}
+
+	nav  {
+		background-color: none;
+		width: 100%;
+		height: 80px;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		border-bottom: 2px solid black;
+		}
+
+	nav li {
+		display: inline-block;
+		float: left;
+		padding: 10px;
+		margin: 16px;
+		}
+
+	nav a {
+		text-decoration: none;
+		list-style-type: none;
+		color: black;
+		font-size: 17px;
+		font-weight: bold;
+		font-family: 'Quicksand', sans-serif;
+		}
+
+	nav a:hover {
+		background-color: black;
+		color: white;
+		transition: 0.3s;
+		}
+
+	.contenedor-logo {
+		}
+
+	.logo {
+		display: inline-block;
+		float: right;
+		padding: 15px;
+		margin: 6px;
+		font-weight: bold;
+		font-size: 24px;	
+		}
+
+	.footer {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #B3B3B3;
+		position: fixed;
+		bottom: 0;
+		}
+
+	.copyright {
+		text-align: center;
+		background-color: #717070;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		font-family: "Source Sans Pro";
+		}
+
+	.mapa {
+		border-radius: 10px;
+		width: 100%;
+		height: 600px;
+		}
+
+	.contacto {
+		padding: 100px;
+	}
+
+	.mensaje {
+		width: 250px;
+		height: 150px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		border: 0;
+		border: 1px solid black;
+		}
+
+	.email {
+		width: 250px;
+		height: 24px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		border: 0;
+		border: 1px solid black;
+		}
+
+	.nombre {
+		width: 250px;
+		height: 24px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		border: 1px solid black;
+		}
+
+	.numero {
+		width: 250px;
+		height: 24px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		border: 0;
+		border: 1px solid black;
+		}
+
+
+	.titulos {
+		text-align: center;
+		font-family: 'Alegreya', serif;
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: 22px;
+		}
+
+	p {
+		font-family: 'Alegreya', serif;
+		font-weight: bold;
+		}
+
+	.conjunto-contacto {
+		display: flex;
+		justify-content: space-around;
+		}
+
+	@media only screen and (max-width: 500px) {
+
+		.conjunto-contacto {
+			display: block;
+			margin: 0 auto;
+		}
+
+		p {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.titulos {
+			margin: 0 auto;
+		}
+
+		.mapa {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		.conjunto {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		nav a {
+			font-size: 10px;
+		}
+
+		#mapa {
+
+		}
+	}
+
+
+	</style>
+</head>
+<body>
+	<!--menu de navegación-->
+		<nav>
+			<ul><!-- lista menu de navegación-->
+				<li><a href="Servicios.html">Servicios</a></li>
+				<li><a href="Proyectos.html">Proyectos</a></li>
+				<li><a href="Sobre-nosotros.html">Sobre Nosotros</a></li>
+				<li><a href="Contacto.html">Contacto</a></li>
+				<div class="contenedor-logo"><a class="logo" href="Index.html">Inicio</a></div>
+			</ul>
+
+		</nav>
+		</br></br></br></br>
+
+<div class="conjunto-contacto">
+<div class="direccion">
+	<p class="titulos">Dirección</p>
+		<p>Av. Fernando el Católico nº3 Bajo</p></br></br>
+</div>
+
+
+<div class="telefonos">
+	<p class="titulos">Teléfonos</p>
+	<p>Fijo: 961345672</p>
+	<p>Móvil: 658934628</p></br></br>
+</div>
+
+
+<div class="horarios">
+	<p class="titulos">Horarios</p>
+	<p>Mañanas: Lunes-Viernes 08:00-14:00</p>
+	<p>Tardes: Lunes-Viernes 16:00-21:00</p></br></br>
+</div>
+</div>	
+	<div class="general">
+		<div class="contacto">
+			<input class="nombre" type="text" placeholder="Diego"></br>
+			<input class="numero" type="number" placeholder="600 619 959"></br>
+			<input class="email" type="email" placeholder="diegoserrano@gmail.com"></br>
+			<input class="mensaje" type="text" placeholder="Mensaje">
+		</div>
+	<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10359.820691523506!2d-0.39211796954136835!3d39.469484157740204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f46da4855e1%3A0x9c6c795bc92d164e!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Abastos!5e0!3m2!1ses!2ses!4v1571877921038!5m2!1ses!2ses" width="500" height="500" frameborder="0"></iframe>
+</div>
+
+<footer class="footer">	
+	<div class="copyright">&copy;2019 - <strong>Oscorp</strong></div>
+</footer>
+
+</body>
+</html>
